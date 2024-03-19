@@ -12,4 +12,36 @@ public class ShortenedUrl extends BaseModel{
     private long expiresAt;
     @ManyToOne
     private User user;
+
+    public String getOriginalUrl() {
+        return originalUrl;
+    }
+
+    public void setOriginalUrl(String originalUrl) {
+        this.originalUrl = originalUrl;
+    }
+
+    public String getShortUrl() {
+        return shortUrl;
+    }
+
+    public void setShortUrl(String shortUrl) {
+        this.shortUrl = shortUrl;
+    }
+
+    public long getExpiresAt() {
+        return expiresAt;
+    }
+
+    public void setExpiresAt(long expiresAt) {
+        this.expiresAt = expiresAt;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

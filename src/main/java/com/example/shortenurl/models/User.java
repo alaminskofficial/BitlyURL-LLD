@@ -12,4 +12,28 @@ public class User extends BaseModel{
     private String email;
     @Enumerated(value = EnumType.ORDINAL)
     private UserPlan userPlan;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public UserPlan getUserPlan() {
+        return userPlan;
+    }
+
+    public void setUserPlan(UserPlan userPlan) {
+        this.userPlan = userPlan;
+    }
 }
